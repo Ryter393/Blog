@@ -1,0 +1,14 @@
+body {
+    position: relative;
+    padding-bottom: 5%;
+}
+p {
+    padding: 0 20% 0 0;
+}
+*[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -75px; 
+    height: 75px; 
+    visibility: hidden; 
+}
