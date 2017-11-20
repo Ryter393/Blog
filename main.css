@@ -1,10 +1,22 @@
-body, html {
+html, body {
     height: 100%;
     position: relative;
-    padding-bottom: 5%;
+}
+/* padded section */
+.pad-section {
+    padding: 5% 0;    
+  }
+.pad-section img {
+    width: 100%;
 }
 p {
     padding: 0 20% 0 0;
+}
+/* vertical-centered text */
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 *[id]:before { 
     display: block; 
@@ -13,16 +25,15 @@ p {
     height: 75px; 
     visibility: hidden; 
 }
-.parallax { 
-    /* The image used */
-    background-image: url("/img/bg.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+/* additional sections */
+.parallax {
+    background: url(/img/bg2.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
     background-size: cover;
+}
+footer {
+    padding-bottom: 5%;
 }
