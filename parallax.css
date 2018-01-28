@@ -8,20 +8,31 @@
 }
 .flexbox {
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    flex-direction: column;
 }
 .flexbox div {
     width: 100%;
 }
 .content {
     padding: 2%;
-    background-color: antiquewhite;
-} 
+    background-color: rgb(224, 219, 212);
+}
+.left {
+    align-self: flex-start;
+}
+.right {
+    align-self: flex-end;
+}
+.spacer {
+    height: 400px;
+}
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .flexbox div {
         width: 50%;
+    }
+    .spacer {
+        height: 900px
     }
 }
 *[id]:before { 

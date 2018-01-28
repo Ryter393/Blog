@@ -1,85 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Deliberate Thoughts</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <title>Deliberate Thoughts</title>
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body data-spy="scroll" data-target="#navbarNav" data-offset="0">
-    <div class="container">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="parallax.css">
+    </head>
+    <body data-spy="scroll" data-target="#navbarNav" data-offset="0">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Deliberate Thoughts</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#now">Now</a>
-                            <a class="dropdown-item" href="#reading">What I'm Reading</a>
-                        </div>
-                    </li>
-                </ul>
-                <a class="nav-item nav-link" href="#articles">Articles</a>
-              </div>
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">Deliberate Thoughts</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="/index.html#home">Home <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="index.html#now">Now</a>
+                                <a class="dropdown-item" href="index.html#reading">What I'm Reading</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="nav-item nav-link" href="index.html#articles">Articles</a>
+                    </div>
+                </div>
             </div>
         </nav>
-        <div class="parallax"></div>          
-        <div>
-            <h1 id="home">March Article Experiment</h1>
-              <p>Out of curiosity, I want to write 1 article per Sunday for the month of March. 
-                  These articles will be "published" by noon each Sunday, 
-                  but the earlier the better. They will most likely be started on Sunday morning.</p>
-              <p>Upon "Publishing": Log the date, total amount of time spent on the article, 
-                  the time started, and the time completed. 
-                  Check the article off the list of article ideas.</p>
-              <p>The purpose of this is to see how my personal thoughts and opinions would work as articles, as well as to 
-                  practice writing and to see how I fare at writing articles in general. They can be shared after March, 
-                  but should not be mentioned before 4 of them are done.</p>
-              
-                <h1 id="now">Now</h1>
-                    <h4>Upcoming features</h4>
-                    <ul>
-                        <li>Modular/automated content delivery</li>
-                        <li>Global header</li>
-                        <li>Images</li>
-                        <li>Homepage seperation (so you can only see one menu item at a time)</li>
-                        <li>Article styling (especially handling headers and sub headers)</li>
-                        <li>Sidebar organizing articles by year and month</li>
-                        <li>Category tags</li>
-                        <li>Search function</li>
-                        <li>Figure out why april article has a different container size</li>
-                        <li>Have a visible scroll animation rather than instant on the homepage navigation</li>
-                        <li>RSS link</li>
-                        <li>Automated email subscription</li>
-                    </ul>
-                    <h4>What I'm up to</h4>
+            <div>
+                <!-- Background -->
+                <img src="/img/wood.jpg" alt="Wood Texture" id="background">
+
+                <!-- Content -->
+                <div class="flexbox">
+                    <div class="content left"><h1 id="home">March Article Experiment</h1>
+                        <p>Out of curiosity, I want to write 1 article per Sunday for the month of March. 
+                                These articles will be "published" by noon each Sunday, 
+                                but the earlier the better. They will most likely be started on Sunday morning.</p>
+                            <p>Upon "Publishing": Log the date, total amount of time spent on the article, 
+                                the time started, and the time completed. 
+                                Check the article off the list of article ideas.</p>
+                            <p>The purpose of this is to see how my personal thoughts and opinions would work as articles, as well as to 
+                                practice writing and to see how I fare at writing articles in general. They can be shared after March, 
+                                but should not be mentioned before 4 of them are done.</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="content right"><h1 id="now">Now</h1>
+                        <h4>Upcoming features</h4>
+                        <ul>
+                            <li>Homepage seperation (so you can only see one menu item at a time)</li>
+                            <li>Convert Navigation to flex container rather than Bootstrap</li>
+                            <li>Modular/automated content delivery</li>
+                            <li>Global header</li>
+                            <li>Images</li>
+                            <li>Article styling (especially handling headers and sub headers)</li>
+                            <li>Sidebar organizing articles by year and month</li>
+                            <li>Category tags</li>
+                            <li>Search function</li>
+                            <li>Figure out why april article has a different container size</li>
+                            <li>Have a visible scroll animation rather than instant on the homepage navigation</li>
+                            <li>RSS link</li>
+                            <li>Automated email subscription</li>
+                        </ul>
+                        <h4>What I'm up to</h4>
                         <ol>
-                            <li>NaNoWrimo</li>
                             <li>Web Development</li>
                             <li>Multivariable Calculus</li>
-                            <li>Fitness</li>
-                            <li>Reading</li>
-                        </ol>
-                    <h4>Interests I'm avoiding for now</h4>
-                        <ul>
+                            <li>Cycling</li>
                             <li>Leatherworking</li>
+                            <li>Car improvements</li>
+                        </ol>
+                        <h4>Interests I'm avoiding for now</h4>
+                        <ul>
                             <li>Unreal Engine 4 Development</li>
                             <li>Watches</li>
-                            <li>Car improvements</li>
                             <li>Electronics</li>
                             <li>DIY Planar magnetic headphones</li>
                             <li>DIY Electromagnetic headphones</li>
@@ -89,32 +94,36 @@
                             <li>Playing instruments</li>
                             <li>Writing music</li>
                             <li>Tailoring</li>
-                            <li>Bicycles</li>
-                            <li>Educational YouTube videos</li>
+                            <li>YouTube Spirals</li>
                         </ul>
-              
-                <h1 id="reading">What I'm Reading</h1>
-                    <h4>In Progress</h4>
-                        <p><em>Worm </em>by Wildbow</p>
-                        <p><em>Gormenghast Trilogy </em>by Mervyn Peake</p>
-                    <h4>Completed</h4>
-                        <p><em>Neverwhere </em>by Neil Gaiman</p>
-                        <p><em>The Hitchhiker's Guide to the Galaxy </em>by Douglas Adams</p>
-                        <p><em>American Gods 10th Anniversary Edition </em>by Neil Gaiman</p>
-                        <p><em>Perdido Street Station </em>by China Mieville</p>
-                        <p><em>His Dark Materials </em>by Phillip Pullman</p>
-                <h1 id="articles">Articles</h1>
-                    <p><em>March 5<sup>th</sup>, 2017</em><a href="\3-5-2017.html"> Improve Your Opinions</a></p>
-                    <p><em>April 22<sup>nd</sup>, 2017</em><a href="\4-22-2017.html"> Listen To Your Feelings, But Don't Trust Them</a></p>
-                    <p><a href="\parallax.html">Parallax Test</a></p>
-                    <p><a href="\cssparallax.html">CSS Parallax</a></p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="content left"><h1 id="reading">What I'm Reading</h1>
+                            <h4>In Progress</h4>
+                            <p><em>Worm </em>by Wildbow</p>
+                            <p><em>Gormenghast Trilogy </em>by Mervyn Peake</p>
+                        <h4>Completed</h4>
+                            <p><em>Neverwhere </em>by Neil Gaiman</p>
+                            <p><em>The Hitchhiker's Guide to the Galaxy </em>by Douglas Adams</p>
+                            <p><em>American Gods 10th Anniversary Edition </em>by Neil Gaiman</p>
+                            <p><em>Perdido Street Station </em>by China Mieville</p>
+                            <p><em>His Dark Materials </em>by Phillip Pullman</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="content right"><h1 id="articles">Articles</h1>
+                        <p><em>March 5<sup>th</sup>, 2017</em><a href="\3-5-2017.html"> Improve Your Opinions</a></p>
+                        <p><em>April 22<sup>nd</sup>, 2017</em><a href="\4-22-2017.html"> Listen To Your Feelings, But Don't Trust Them</a></p>
+                        <p><a href="\parallax.html">Parallax Test</a></p>
+                        <p><a href="\index.html">CSS Parallax</a></p>
+                    </div>
+                </div>
+
             </div>
-    </div>
-    <footer></footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+        <footer></footer>        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>        
+    </body>
 </html>
