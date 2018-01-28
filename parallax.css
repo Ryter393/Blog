@@ -9,7 +9,6 @@
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1140px;
     margin: auto;
 }
 .flexbox div {
@@ -18,7 +17,7 @@
 .content {
     padding: 2%;
     background-color: antiquewhite;
-}
+} 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .flexbox div {
