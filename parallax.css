@@ -14,14 +14,15 @@
     width: 100%;
 }
 .content {
-    padding: 2%;
     background-color: rgb(224, 219, 212);
 }
 .left {
     align-self: flex-start;
+    padding: 2%;
 }
 .right {
     align-self: flex-end;
+    padding: 2%;
 }
 .spacer {
     height: 400px;
@@ -33,6 +34,12 @@
     }
     .spacer {
         height: 900px
+    }
+    .left {
+        padding-left: 6%;
+    }
+    .right {
+        padding-right: 6%;
     }
 }
 *[id]:before { 
