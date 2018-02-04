@@ -10,18 +10,13 @@
     display: flex;
     flex-direction: column;
 }
-.flexbox div {
-    width: 100%;
-}
 .content {
     background-color: rgb(224, 219, 212);
 }
 .left {
-    align-self: flex-start;
     padding: 2%;
 }
 .right {
-    align-self: flex-end;
     padding: 2%;
 }
 .spacer {
@@ -29,17 +24,31 @@
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .flexbox div {
+    .flexbox > div {
         width: 50%;
     }
     .spacer {
         height: 900px
     }
     .left {
-        padding-left: 6%;
+        align-self: flex-start;
     }
     .right {
-        padding-right: 6%;
+        align-self: flex-end;
+    }
+    .left div {
+        display: flex;
+        flex-direction: column;
+        max-width: 560px;
+        margin-left: auto;
+        padding-left: 5%;
+    }
+    .right div{
+        display: flex;
+        flex-direction: column;
+        max-width: 560px;
+        margin-right: auto;
+        padding-right: 5%;
     }
 }
 *[id]:before { 
