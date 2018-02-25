@@ -6,7 +6,28 @@
     width: 100%;
     height: 100%;
 }
-.flexbox {
+body {
+    margin: 40px 0 0 0;
+}
+.navbar {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: antiquewhite;
+}
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+}
+.navbar-brand {
+    font-size: 25px;
+    font: ;
+    color: black;
+}
+.flex-container {
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +45,12 @@
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .flexbox > div {
+    .navbar-container {
+        width: 60%;
+        max-width: 1120px;
+        margin: auto;
+    }
+    .flex-container > div {
         width: 50%;
     }
     .spacer {
@@ -50,8 +76,8 @@
 *[id]:before { 
     display: block; 
     content: " "; 
-    margin-top: -78px; 
-    height: 78px; 
+    margin-top: -80px; 
+    height: 80px; 
     visibility: hidden; 
 }
 footer {
